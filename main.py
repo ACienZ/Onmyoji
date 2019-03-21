@@ -9,4 +9,5 @@ from reminder import reminderNode
 from controller import controllerNode
 from identifier import identifierNode
 
-if __name__ = '__main__':
+if __name__ == '__main__':
+    pass
