@@ -15,6 +15,6 @@
 
 class masterNode:
     #members
-
+    
     #function
     

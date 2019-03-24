@@ -4,21 +4,32 @@
 #2018.11.21
 #create class
 
-from pynput.mouse import Button,Controller
+from mouse import mouseController
+from keyboard import keyboardController
+import sqlite3
+import socket
+###
+#import time
 
-class controllerNode:
 
-    @classmethod
-    def mouseteleport(cls,position1,position2):
-        mouse=Controller()
-        mouse.move(position1,position2)
+#控制鼠标键盘具体实现
+class ControllerNode:
+    pass
 
-    @classmethod
-    def mouseMove(cls,position1,position2):
-        mouse=Controller()
-        positA,positB=mouse.position
-        ###########
-        print(positA,positB)
-        for i in range(position1):
-            for j in range(position2):
+#侦听线程
+def listener():
+    pass
 
+#请求处理函数
+def solver():
+    pass
+
+def controllerManager():
+    #连接数据库
+    conn=sqlite3.connect('./controller/test.db')
+    cursor=conn.cursor()
+    #开启侦听线程
+
+    #接收请求调用ControllerNode进行处理
+
+controllerManager()
